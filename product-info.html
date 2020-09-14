@@ -23,16 +23,74 @@
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+      <a class="py-2 d-none d-md-inline-block" href="#" id="agrego_usuario"></a>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 13/09/2020) y Entrega 4 (Fecha de entrega: 20/09/2020).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+  <div class="container mt-5">
+    <div class="text-center p-4">
+      <h2>Descripción Productos</h2>
+      <p class="lead">Encontrarás aquí toda la información del producto seleccionado</p>
     </div>
   </div>
+  <div class="p-4">
+    <h3 id="nombre-carro"></h3>
+      <hr class="my-3">
+      <dt>Categoría a la cual pertenece:</dt>
+        <dd>
+          <p id="categoria"></p>
+        </dd>
+      <dl>
+        <dt>Descripción:</dt>
+        <dd>
+          <p id="descripcion"></p>
+        </dd>
+
+        <dt>Costo del producto:</dt>
+        <dd>
+          <p id="costo"></p>
+        </dd>
+        <dt>Imágenes ilustrativas:</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="produ_inf">
+          </div>
+        </dd> 
+        
+  </div>
+  <div class="p-4 text-center"id="relate-product">
+    <h3 class=" p-4 text-center ">Estos son los Productos relacionados:</h3>
+  </div> 
+  <div class="p-4" id="cajita-comentarios">
+    <h6 class="text-center">Recomendaciones</h6>
+    <div id="comentarios">
+
+    </div> 
+    <div id="comentarioNuevo">
+
+    </div>
+  </div>
+  
+<div >
+  <form method="POST" action="" name="formulario" onsubmit="comentUsuario(event)"class="text-center">
+    
+    <label>Valoración del producto:
+      <select id="calificacion"> 
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      
+      </select><br>
+    </label>
+    <textarea id="opinionUsuario" name="opinion" placeholder="Escribe aqui tu comentario" required></textarea><br>
+    <button type="submit" class="">Enviar</button><br>
+    
+  </form>
+  
+</div>  
+
+  
   <footer class="text-muted">
     <div class="container">
      
