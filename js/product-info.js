@@ -45,21 +45,25 @@ function comentUsuario(event){
 
     }
     append(contenedor, elemento);
-   
+  
 }
 function muestroImagenesG(array){
+    
     let htmlContentToAppend = "";
 
-    for(let i = 0; i< array.length; i++){
+    for(let i = 1; i< array.length; i++){
         let imag= array[i];
-        htmlContentToAppend += `
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="d-block mb-4 h-100">
-                    <img class="img-fluid img-thumbnail" src="` + imag + `" alt="">
-                </div>
-            </div>
+       
+        
+            htmlContentToAppend += `
+        
+          <div class="carousel-item ">
+            <img src="  ` + imag +`" class="d-block w-100" alt="...">
+          </div>
         ` 
-    }document.getElementById("produ_inf").innerHTML = htmlContentToAppend;
+           
+    }
+    document.getElementById("carrucelImagenes").innerHTML+= htmlContentToAppend;
 }
 
 document.addEventListener("DOMContentLoaded", function(e){
@@ -90,9 +94,10 @@ document.addEventListener("DOMContentLoaded", function(e){
                     for(let x=0; x< car.relatedProducts.length; x++){
                         let autosRelacionados= autos[car.relatedProducts[x]];
                         htmlContentToAppend += `
+                        
                             <div class="col-lg-3 col-md-4 col-6 text-center">
                                 <div class="d-block mb-4 h-100">
-                                    <img class="img-fluid img-thumbnail" src="` + autosRelacionados.imgSrc+ `" alt="">
+                                    <img class="img-fluid img-thumbnail w-100" src="` + autosRelacionados.imgSrc+ `" alt="">
                                 </div>
                             </div>
                         ` 

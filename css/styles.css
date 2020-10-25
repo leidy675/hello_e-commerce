@@ -163,7 +163,7 @@ a.custom-card:hover {
   transform: translate(-50%, -50%);
 }
 
-label, input {
+.formulariolabel, .formularioimput {
 margin-bottom: 6px;  
 text-align: center;  
 display: block;
@@ -179,6 +179,37 @@ width: 100%;
 #titulo {
   color: #fff;
 }
+
+
+.tarje, #numerotarjeta {
+  display:block
+}
+.codis, #codigoseguridad {
+  display:block
+}
+
+.numberc, #numbercuenta {
+  display:block
+}
+
+#numerotarjeta, #codigoseguridad, #numbercuenta , #mess, #anio,#direccion1, #direccion2, #direccion3 {
+  border-radius: 10px;
+}
+.modal-header {
+  background-color: grey;
+}
+#staticBackdropLabel {
+  color: white;
+}
+.close {
+color: black;
+}
+#tablec {
+  background-color: rgb(245, 71, 100 );
+  color: #fff;
+}
+
+
 
 
 
